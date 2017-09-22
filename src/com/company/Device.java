@@ -55,7 +55,7 @@ public class Device {
         int point = 0;
         int  index = 0;
         double value;
-        logs = new Log[Quiz.monitor_period / period];
+        logs = new Log[Quiz.monitor_period / period + 1];
         while (point <= Quiz.monitor_period) {
 
             value = (index < dataset.length) ? dataset[index] : -1;
